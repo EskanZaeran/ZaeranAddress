@@ -2,111 +2,249 @@
 <html lang="fa" dir="rtl">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>راهنمای مسیر</title>
+<title>راهنمای زائران</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 
 <style>
 
 *{
+
 margin:0;
 padding:0;
 box-sizing:border-box;
+
 font-family:'Vazirmatn',sans-serif;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
 }
 
 body{
-background:#f3f5f8;
-color:#222;
-padding:20px;
+
+background:#090909;
+
+background-image:
+radial-gradient(circle at top,#262626 0%,#090909 45%);
+
+color:white;
+
+}
+
+header{
+
+padding:40px 20px;
+
+text-align:center;
+
+}
+
+.logo{
+
+width:110px;
+
+height:110px;
+
+border-radius:50%;
+
+border:3px solid #D4AF37;
+
+padding:4px;
+
+background:#111;
+
+object-fit:cover;
+
+box-shadow:0 0 25px rgba(212,175,55,.4);
+
+}
+
+header h1{
+
+margin-top:18px;
+
+font-size:30px;
+
+font-weight:800;
+
+color:#F5D77A;
+
+}
+
+header p{
+
+margin-top:10px;
+
+color:#bbb;
+
+font-size:15px;
+
+line-height:1.9;
+
 }
 
 .container{
-max-width:900px;
+
+width:92%;
+
+max-width:520px;
+
 margin:auto;
-}
 
-.header{
-text-align:center;
-margin-bottom:35px;
-}
+padding-bottom:50px;
 
-.header h1{
-font-size:30px;
-margin-bottom:10px;
-}
-
-.header p{
-color:#666;
 }
 
 .card{
 
-background:white;
-border-radius:20px;
+background:#151515;
+
+border:1px solid #2d2d2d;
+
+border-radius:25px;
+
 overflow:hidden;
-margin-bottom:30px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+margin-bottom:35px;
+
+transition:.35s;
+
+box-shadow:0 15px 35px rgba(0,0,0,.45);
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+border-color:#D4AF37;
+
+box-shadow:0 20px 40px rgba(212,175,55,.18);
 
 }
 
 .card img{
 
 width:100%;
-height:260px;
+
+height:240px;
+
 object-fit:cover;
+
+display:block;
 
 }
 
 .content{
 
-padding:25px;
+padding:22px;
 
 }
 
-.content h2{
+.place{
 
-margin-bottom:12px;
+font-size:24px;
+
+font-weight:700;
+
+margin-bottom:18px;
+
+color:#F5D77A;
 
 }
 
 .address{
 
-background:#f7f7f7;
-padding:15px;
-border-radius:12px;
+background:#101010;
+
+border:1px solid #2c2c2c;
+
+border-radius:15px;
+
+padding:18px;
+
 line-height:2;
+
+font-size:15px;
+
+color:#ddd;
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:12px;
+
+margin-top:22px;
 
 }
 
 .btn{
 
-display:inline-block;
-margin-top:20px;
-background:#0066ff;
-color:white;
+flex:1;
+
 text-decoration:none;
-padding:14px 30px;
-border-radius:12px;
+
+text-align:center;
+
+padding:16px;
+
+border-radius:15px;
+
 font-size:17px;
-transition:.3s;
+
+font-weight:bold;
+
+transition:.25s;
 
 }
 
 .btn:hover{
 
-background:#004fd1;
+transform:scale(1.04);
 
 }
 
-.footer{
+.neshan{
+
+background:#17B857;
+
+color:white;
+
+}
+
+.balad{
+
+background:#F59E0B;
+
+color:white;
+
+}
+
+footer{
+
+padding:35px;
 
 text-align:center;
-color:#888;
-padding:30px;
+
+color:#777;
+
+font-size:14px;
 
 }
 
@@ -116,42 +254,65 @@ padding:30px;
 
 <body>
 
+<header>
+
+<img src="images/logo.png" class="logo">
+
+<h1>
+
+راهنمای زائران
+
+</h1>
+
+<p>
+
+جهت مشاهده مسیر، یکی از مکان‌های زیر را انتخاب نمایید.
+
+</p>
+
+</header>
+
 <div class="container">
 
-<div class="header">
-
-<h1>راهنمای مسیر</h1>
-
-<p>لطفاً مقصد موردنظر خود را انتخاب کنید.</p>
-
-</div>
-
-
-<!-- لوکیشن اول -->
+<!-- کارت اول -->
 
 <div class="card">
 
-<img src="images/location1.jpg">
+<img src="images/eskan.jpg">
 
 <div class="content">
 
-<h2>🏨 اقامتگاه</h2>
+<div class="place">
 
-<div class="address">
-
-استان ...<br>
-شهر ...<br>
-خیابان ...<br>
-کوچه ...<br>
-پلاک ...
+🏨 محل اسکان
 
 </div>
 
-<a class="btn"
+<div class="address">
+
+آدرس محل اسکان اینجا نوشته می‌شود.
+
+</div>
+
+<div class="buttons">
+
+<a class="btn neshan"
+
 href="#"
+
 target="_blank">
 
-📍 مسیریابی
+📍 نشان
+
+</a>
+
+<a class="btn balad"
+
+href="#"
+
+target="_blank">
+
+🧭 بلد
 
 </a>
 
@@ -159,32 +320,46 @@ target="_blank">
 
 </div>
 
-
-<!-- لوکیشن دوم -->
+</div>
+<!-- کارت دوم -->
 
 <div class="card">
 
-<img src="images/location2.jpg">
+<img src="images/mehrabad.jpg">
 
 <div class="content">
 
-<h2>🏢 پذیرش</h2>
+<div class="place">
 
-<div class="address">
-
-استان ...<br>
-شهر ...<br>
-خیابان ...<br>
-کوچه ...<br>
-پلاک ...
+👥 تجمع محله مهرآباد جنوبی
 
 </div>
 
-<a class="btn"
+<div class="address">
+
+آدرس محل تجمع را اینجا بنویس.
+
+</div>
+
+<div class="buttons">
+
+<a class="btn neshan"
+
 href="#"
+
 target="_blank">
 
-📍 مسیریابی
+📍 نشان
+
+</a>
+
+<a class="btn balad"
+
+href="#"
+
+target="_blank">
+
+🧭 بلد
 
 </a>
 
@@ -192,33 +367,49 @@ target="_blank">
 
 </div>
 
+</div>
 
 
-<!-- لوکیشن سوم -->
+
+<!-- کارت سوم -->
 
 <div class="card">
 
-<img src="images/location3.jpg">
+<img src="images/mosalla.jpg">
 
 <div class="content">
 
-<h2>🚗 پارکینگ</h2>
+<div class="place">
 
-<div class="address">
-
-استان ...<br>
-شهر ...<br>
-خیابان ...<br>
-کوچه ...<br>
-پلاک ...
+🕌 مصلای تهران
 
 </div>
 
-<a class="btn"
+<div class="address">
+
+تهران - مصلای امام خمینی (ره)
+
+</div>
+
+<div class="buttons">
+
+<a class="btn neshan"
+
 href="#"
+
 target="_blank">
 
-📍 مسیریابی
+📍 نشان
+
+</a>
+
+<a class="btn balad"
+
+href="#"
+
+target="_blank">
+
+🧭 بلد
 
 </a>
 
@@ -226,14 +417,56 @@ target="_blank">
 
 </div>
 
-
-<div class="footer">
-
-© تمامی حقوق محفوظ است.
-
 </div>
 
 </div>
+
+<footer>
+
+التماس دعا 🌹
+
+</footer>
+
+<script>
+
+const cards=document.querySelectorAll(".card");
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.animate([
+
+{opacity:0,transform:"translateY(40px)"},
+
+{opacity:1,transform:"translateY(0)"}
+
+],{
+
+duration:700,
+
+fill:"forwards"
+
+});
+
+}
+
+});
+
+});
+
+cards.forEach(card=>{
+
+card.style.opacity="0";
+
+observer.observe(card);
+
+});
+
+</script>
 
 </body>
+
 </html>
